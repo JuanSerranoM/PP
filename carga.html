@@ -73,27 +73,27 @@
             <div class="row">
             <div class="col-md-3">
                 <label class="col-md-2" for="">Nombre</label>
-                <input type="text" class="form-control col-md-4">
+                <input type="text" class="form-control col-md-4" id="cargaNombre">
             </div>
 
                 <div class="col-md-3">   
                     <label class="col-md-2" for="">Categoria</label>
-                    <select class="form-control col-md-4" name="" id="">
-                        <option value="" selected></option>
-                        <option value="">Informatica</option>
-                        <option value="">Comestible</option>
-                        <option value="">Limpieza</option>
+                    <select class="form-control col-md-4" name="" id="cargaCategoria">
+                        <option value="-1" selected>Seleccione una categoria</option>
+                        <option value="0">Informatica</option>
+                        <option value="1">Comestible</option>
+                        <option value="2">Limpieza</option>
                     </select>
 
                 </div>
 
                 <div class="col-md-3">    
                     <label for="">Cantidad</label>
-                    <input type="number" class="form-control">
+                    <input type="number" class="form-control" id="cargaCantidad">
                 </div>
                 <div class="col-md-3">
                     <label for="">Punto de Reposicion</label>
-                    <input type="number" class="form-control">
+                    <input type="number" class="form-control" id="cargaPuntRepo">
                 </div>
             </div>
            
@@ -102,7 +102,7 @@
 
 
            <div class="">
-            <button class="btn btn-dark mt-4 ">CARGAR</button>
+            <button class="btn btn-dark mt-4 " onclick="CargaRegistro()">CARGAR</button>
            </div>
        </div>
         <div>
